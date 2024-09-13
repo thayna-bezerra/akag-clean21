@@ -8,36 +8,36 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    <div w3-include-html="./src/components/akag-headline.html"></div>
-      
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          file = elmnt.getAttribute("w3-include-html");
-          if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-              if (this.readyState == 4) {
-                if (this.status == 200) {
-                  elmnt.innerHTML = this.responseText;
-                }
-                if (this.status == 404) {
-                  elmnt.innerHTML = "Page not found.";
-                }
-                elmnt.removeAttribute("w3-include-html");
-                includeHTML();
+  <div w3-include-html="./src/sections/akag-presentation.html"></div>
+
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
               }
-            };
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-          }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          };
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
         }
       }
-      includeHTML();
-    </script>
+    }
+    includeHTML();
+  </script>
 </body>
 </html>

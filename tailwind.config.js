@@ -28,6 +28,7 @@ module.exports = {
       },
       fontSize: {
         '11': '11px',
+        '28': '28px'
       },
       lineHeight: {
         '24': '24px',
