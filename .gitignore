@@ -1,0 +1,7 @@
+# Arquivos temporários
+*.log
+*.tmp
+
+# Diretórios de dependências
+node_modules/
+dist/
