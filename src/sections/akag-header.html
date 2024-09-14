@@ -1,0 +1,55 @@
+<div w3-include-html="./src/components/akag-alert.html"></div>
+<div class="bg-orange-500 h-20 w-full px-4 md:px-20 flex items-center justify-between">
+    <div class="order-1 md:order-2 flex items-center">
+        <div>
+            <span class="cursor-pointer pr-4 md:hidden block">
+                <img class="w-8" name="menu" onclick="Menu(this)" src="./src/assets/svg-menu.svg" alt="icon menu">
+            </span>
+        </div>
+      
+        <ul class="text-white md:mt-0 mt-[29px] font-montserrat text-sm font-bold tracking-1.3 text-uppercase md:flex md:items-center z-10 md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#">
+                    Clean 21
+                </a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#">
+                    Fabi Beauty
+                </a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#">
+                    Institucional
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="order-2 md:order-1 flex-1 md:flex-none">
+        <a href="/index.html" class="block text-left md:text-center">
+            <span class="sr-only">Logo Fave</span>
+            <img class="w-24 md:w-32" src="./src/assets/svg-logo-clean21.svg" alt="Logo Clean21" />
+        </a>
+    </div>
+
+    <div class="order-3 flex gap-4 md:gap-11 items-center justify-around">
+        <a href="#" class="block">
+            <img class="w-7" src="./src/assets/svg-search.svg" alt="Icon Search">
+        </a>
+        <a href="#" class="block">
+            <img class="w-7" src="./src/assets/svg-user.svg" alt="Icon User">
+        </a>
+        <a href="#" class="relative" onclick="openSidebar()">
+            <img class="w-7" src="./src/assets/svg-cart.svg" alt="Icon Cart">
+            <span class="absolute w-5 h-5 top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center text-xs font-bold">
+                10
+            </span>
+        </a>
+    </div>
+</div>
