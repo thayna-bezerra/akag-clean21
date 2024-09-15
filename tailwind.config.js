@@ -8,6 +8,7 @@ module.exports = {
         'orange-500': "#F17E2E",
         'orange-400': "#CC9036",
         'orange-100': "#D4A155",
+        'gray-700': "#444444",
         'gray-500': "#5A5A5A",
         'gray-450': "#A3A3A3",
         'gray-350': "#D9D9D9",
