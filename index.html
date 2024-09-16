@@ -9,8 +9,8 @@
 </head>
 <body class="bg-gray-50">
   <div w3-include-html="./src/sections/akag-header.html"></div>
-  <!-- <div w3-include-html="./src/sections/akag-presentation.html"></div>
-  <div w3-include-html="./src/sections/akag-intro.html"></div>
+  <div w3-include-html="./src/sections/akag-presentation.html"></div>
+  <!-- <div w3-include-html="./src/sections/akag-intro.html"></div>
   <div w3-include-html="./src/sections/akag-symptoms.html"></div>
   <div w3-include-html="./src/sections/akag-explanation.html"></div>
   <div w3-include-html="./src/sections/akag-consequences.html"></div>
@@ -19,9 +19,9 @@
   <div w3-include-html="./src/sections/akag-whychoose.html"></div>
   <div w3-include-html="./src/sections/akag-howitworks.html"></div>
   <div w3-include-html="./src/sections/akag-expectation.html"></div>
-  <div w3-include-html="./src/sections/akag-comments.html"></div> -->
+  <div w3-include-html="./src/sections/akag-comments.html"></div>
   <div w3-include-html="./src/sections/akag-questions.html"></div>
-  <!-- <div w3-include-html="./src/sections/akag-footer.html"></div> -->
+  <div w3-include-html="./src/sections/akag-footer.html"></div> -->
 
   <script>
     function includeHTML() {
@@ -49,6 +49,17 @@
           return;
         }
       }
+    }
+    
+    function Menu(e) {
+      let list = document.querySelector("ul");
+      e.name === "menu"
+        ? ((e.name = "close"),
+          list.classList.add("top-[80px]"),
+          list.classList.add("opacity-100"))
+        : ((e.name = "menu"),
+          list.classList.remove("top-[80px]"),
+          list.classList.remove("opacity-100"));
     }
 
     function toggleAccordion(e) {
