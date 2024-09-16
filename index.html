@@ -18,10 +18,10 @@
   <div w3-include-html="./src/sections/akag-kit.html"></div>
   <div w3-include-html="./src/sections/akag-whychoose.html"></div>
   <div w3-include-html="./src/sections/akag-howitworks.html"></div>
-  <div w3-include-html="./src/sections/akag-expectation.html"></div> -->
-  <div w3-include-html="./src/sections/akag-comments.html"></div>
-  <!-- <div w3-include-html="./src/sections/akag-questions.html"></div>
-  <div w3-include-html="./src/sections/akag-footer.html"></div> -->
+  <div w3-include-html="./src/sections/akag-expectation.html"></div>
+  <div w3-include-html="./src/sections/akag-comments.html"></div> -->
+  <div w3-include-html="./src/sections/akag-questions.html"></div>
+  <!-- <div w3-include-html="./src/sections/akag-footer.html"></div> -->
 
   <script>
     function includeHTML() {
@@ -50,6 +50,27 @@
         }
       }
     }
+
+    function toggleAccordion(e) {
+      const trigger = e.querySelector(".accordion-trigger");
+      const content = e.querySelector(".accordion-content");
+
+      content.classList.toggle("hidden");
+      e.classList.toggle("open");
+    }
+
+    function attachAccordionHandlers() {
+      const accordionItems = document.querySelectorAll(".cursor-pointer");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        attachAccordionHandlers();
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      attachAccordionHandlers();
+    });
+
     includeHTML();
   </script>
 </body>

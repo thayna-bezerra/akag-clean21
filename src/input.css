@@ -3,3 +3,25 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+.arrow-icon {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+li.cursor-pointer.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+li.slick-prev.open .arrow-icon,li
+.slick-next.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+li.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+li button.open .arrow-icon {
+  transform: rotate(180deg);
+}
