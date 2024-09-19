@@ -651,6 +651,10 @@ video {
   margin: 0.75rem;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -689,6 +693,16 @@ video {
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .-mt-4 {
@@ -833,6 +847,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-12 {
@@ -1217,6 +1235,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1366,6 +1389,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-left {
@@ -1836,6 +1863,10 @@ li button.open .arrow-icon {
     width: 2.5rem;
   }
 
+  .md\:w-7 {
+    width: 1.75rem;
+  }
+
   .md\:flex-none {
     flex: none;
   }
@@ -1900,6 +1931,12 @@ li button.open .arrow-icon {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1961,6 +1998,10 @@ li button.open .arrow-icon {
     padding-right: 2rem;
   }
 
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2011,6 +2052,10 @@ li button.open .arrow-icon {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .md\:leading-10 {
