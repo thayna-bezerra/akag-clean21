@@ -885,6 +885,14 @@ video {
   height: 800px;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1419,6 +1427,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1860,6 +1873,11 @@ li button.open .arrow-icon {
     margin-bottom: 5rem;
   }
 
+  .md\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
   .md\:-mb-20 {
     margin-bottom: -5rem;
   }
@@ -1934,6 +1952,18 @@ li button.open .arrow-icon {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
   }
 
   .md\:w-1\/2 {
@@ -2044,6 +2074,18 @@ li button.open .arrow-icon {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:self-end {
