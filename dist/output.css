@@ -1503,6 +1503,10 @@ video {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
