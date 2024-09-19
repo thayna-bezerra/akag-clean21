@@ -811,12 +811,12 @@ video {
   height: 1.5rem;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-\[207px\] {
   height: 207px;
+}
+
+.h-\[35px\] {
+  height: 35px;
 }
 
 .h-\[510px\] {
@@ -829,14 +829,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[35px\] {
-  height: 35px;
 }
 
 .w-12 {
@@ -1011,6 +1003,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1397,12 +1393,20 @@ video {
   line-height: 2.5rem;
 }
 
+.leading-29 {
+  line-height: 29px;
+}
+
 .leading-5 {
   line-height: 1.25rem;
 }
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .leading-9 {

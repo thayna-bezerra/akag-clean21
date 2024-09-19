@@ -39,7 +39,7 @@ module.exports = {
       },
       lineHeight: {
         '24': '24px',
-        '29': '29px',
+        '29': '29px'
       },
       letterSpacing: {
         '1.1': '1.1px',
